@@ -71,6 +71,7 @@ async function setup() {
     // Connect the device to the web audio graph
     device.node.connect(outputNode);
 
+
     // (Optional) Connect MIDI inputs
     makeMIDIKeyboard(device);
 
@@ -150,6 +151,5 @@ function makeMIDIKeyboard(device) {
         mdiv.appendChild(key);
     });
 }
-
 
 setup();
